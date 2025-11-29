@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análise de E-commerce Olist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loading-overlay">
+      <div class="spinner"></div>
+      <p>Carregando dados...</p>
+    </div>
+    <h1 id="main-title">Análise de Pedidos do Olist</h1>
+
+    <div class="filters">
+      <div id="year-buttons"></div>
+      <div id="month-buttons"></div>
+      <div id="season-buttons"></div>
+      <div id="holiday-buttons"></div>
+    </div>
+
+    <div class="container">
+      <h2>Pedidos ao Longo do Tempo</h2>
+      <div id="orders-by-time"></div>
+    </div>
+
+    <div class="container">
+      <h2>Pedidos por Estado</h2>
+      <div id="orders-by-state"></div>
+    </div>
+
+    <div class="container">
+      <h2>Métodos de Pagamento</h2>
+        <div id="payment-methods" class="chart-container"></div>
+    </div>
+
+    <div class="container">
+        <h2>Categorias Mais Vendidas</h2>
+        <div id="top-categories" class="chart-container"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
